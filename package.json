@@ -4,8 +4,8 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "./node_modules/.bin/tsx server/index.ts",
-    "build": "./node_modules/.bin/tsx script/build.ts",
+    "dev": "npm exec tsx server/index.ts",
+    "build": "npm exec tsx script/build.ts",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
     "db:push": "drizzle-kit push"
